@@ -1,0 +1,28 @@
+/* Responsive */
+
+@media (max-width: 1190px) {
+  html {
+    font-size: 55%;
+  }
+  .section .hone {
+    padding-top: 70px;
+  }
+  .content {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 991) {
+  .home {
+    padding: 2rem;
+  }
+  video {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 575) {
+  video {
+    max-width: fit-content;
+  }
+}
