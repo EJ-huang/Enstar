@@ -1,0 +1,637 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* .box .swiper-wrapper {
+  width: 100%;
+} */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+/* .mySwiper {
+  width: 100%;
+  height: auto;
+}
+.swiper-slide {
+  width: auto;
+  height: auto;
+}
+.mySwiper img {
+  width: 100%;
+  height: auto;
+} */
+
+.aside {
+  height: 960px;
+  background-color: #fff1e2;
+}
+.plan .box1 {
+  position: relative;
+}
+.plan .box1 #down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.plan .box2 {
+}
+
+.teacher .aside {
+  font-size: 180px;
+  font-family: GenYoGothicTW-H;
+  text-align: center;
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.teacher .teacher1 {
+  background-color: blue;
+}
+
+/*  home */
+.home {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  flex-flow: column;
+  z-index: 0;
+}
+.home .content {
+  position: absolute;
+  top: 30%;
+  margin: 0 0 40px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  margin-top: 5rem;
+  background: #fff;
+  font-size: 68px;
+  width: 200px;
+  height: 200px;
+  color: #fa0;
+  font-family: "源ノ角ゴシック";
+}
+/* .home .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+/* .content .box {
+  position: absolute;
+  width: 147px;
+  height: 156px;
+} */
+
+/* Section-1 */
+.section-1 {
+  /* position: absolute; */
+  display: flex;
+  /* gap: 1.5rem; */
+}
+
+.section-1 .pic1 {
+  position: relative;
+  display: inline-block;
+}
+.section-1 .pic1 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.section-1 .pic1:hover .img-top {
+  display: inline;
+}
+.section-1 .pic2 {
+  position: relative;
+  display: inline-block;
+}
+.section-1 .pic2 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.section-1 .pic2:hover .img-top {
+  display: inline;
+}
+.pic3 {
+  position: relative;
+  display: inline-block;
+}
+.pic3 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.pic3:hover .img-top {
+  display: inline;
+}
+.pic4 {
+  position: relative;
+  display: inline-block;
+}
+.pic4 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.pic4:hover .img-top {
+  display: inline;
+}
+
+/* Content-view */
+
+.content-view .puzzle {
+  position: relative;
+  /* width: 100vw; */
+  height: 100vh;
+  /* background: rgba(0, 0, 0, 0.7); */
+  background-image: url("../images/bg.png");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+/* #puzzle {
+  position: relative;
+  margin: 0 auto 10px;
+  height: 200px;
+  width: 450px;
+} */
+/* #puzzle img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#puzzle img.show {
+  opacity: 1;
+  filter: alpha(opacity=1);
+} */
+.content-view .puzzle .box {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 500px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+}
+.power {
+  border: 2px solid #000;
+  margin-bottom: 40px;
+  background: #ff9900;
+  font-family: "源ノ角ゴシック";
+  padding: 10px;
+}
+.power:hover {
+  background: #fff;
+  color: #ff9900;
+}
+.box .power:hover .puzzle {
+  background-image: url(../images/puzzle_1.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.power h3 {
+  font-size: 52px;
+}
+.power span {
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+.wing {
+  margin-bottom: 40px;
+  border: 2px solid #000;
+  background: #ff9900;
+  font-family: "源ノ角ゴシック";
+  padding: 10px;
+}
+.wing:hover {
+  background: #fff;
+  color: #ff9900;
+}
+.wing h3 {
+  font-size: 52px;
+}
+.wing span {
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+.income {
+  border: 2px solid #000;
+  background: #ff9900;
+  font-family: "源ノ角ゴシック";
+  padding: 10px;
+}
+.income:hover {
+  background: #fff;
+  color: #ff9900;
+}
+.income h3 {
+  font-size: 52px;
+}
+.income span {
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* open_class */
+
+/* .open_class {
+  height: 100%;
+  position: relative;
+} */
+
+.open_class .video-word {
+  flex-direction: column;
+  align-items: center;
+  top: 5rem;
+  font-size: 68px;
+  padding-top: 5rem;
+  color: #ff9900;
+}
+/* .open_class .video-word:before {
+  content: "";
+  flex-grow: 0.5;
+} */
+.open_pic {
+  object-fit: fit;
+}
+
+/* 開課Hover */
+.open_pic {
+  position: relative;
+  display: inline-block;
+}
+.open_pic img {
+  width: 100%;
+  height: 100%;
+}
+.open_pic .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.open_pic:hover .img-top {
+  display: inline;
+}
+.open_pic2 {
+  position: relative;
+  display: inline-block;
+}
+.open_pic2 img {
+  width: 100%;
+  height: 100%;
+}
+.open_pic2 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.open_pic2:hover .img-top {
+  display: inline;
+}
+.open_pic3 {
+  position: relative;
+  display: inline-block;
+}
+.open_pic3 img {
+  width: 100%;
+  height: 100%;
+}
+.open_pic3 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.open_pic3:hover .img-top {
+  display: inline;
+}
+.open_pic4 {
+  position: relative;
+  display: inline-block;
+}
+.open_pic4 img {
+  width: 100%;
+  height: 100%;
+}
+.open_pic4 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.open_pic4:hover .img-top {
+  display: inline;
+}
+
+/* Teacher */
+
+.teacher .teacher-inside {
+  margin-top: 40px;
+  text-align: center;
+}
+.teacher .teacher-inside span {
+  margin-top: 70px;
+}
+.teacher .teacher-1 img {
+  /* height: 100%;
+  width: 100%; */
+  object-fit: cover;
+}
+.teacher-1 {
+  overflow: hidden;
+  position: relative;
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); */
+}
+.teacher-content {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  top: -100%;
+  left: 0;
+  text-align: center;
+  background: rgba(52, 152, 219, 0.5);
+  padding-top: 5rem;
+  padding: 2rem;
+}
+.teacher-1:hover .teacher-content {
+  top: 20%;
+}
+
+/* star */
+.star {
+  /* height: 1150px; */
+  background-color: #fff1e2;
+  position: relative;
+  align-items: center;
+}
+.star .box {
+  position: relative;
+}
+.star img {
+  display: block;
+  margin: 0 auto;
+}
+.star_1 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_2 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_3 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_4 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_5 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_6 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_7 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_8 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.star_9 .slide-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+.slide-in {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.align-left.slide-in {
+  transform: translateY(30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateY(-100%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateY(0%) scale(1);
+}
+
+/* .star_1 {
+  position: relative;
+} */
+/* .star_1 .img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+/* .star_1 {
+  position: relative;
+  display: inline-block;
+}
+.star_1 .img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+} */
+/* .open_pic .img-in {
+  z-index: 90;
+} */
+/* .open_pic:hover .img-top {
+  display: inline;
+}
+
+.star_1 {
+  position: relative;
+  display: inline-block;
+}
+.star_1 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_1:hover .img-top {
+  display: inline;
+}
+.star_2 {
+  position: relative;
+  display: inline-block;
+}
+.star_2 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_2:hover .img-top {
+  display: inline;
+}
+.star_3 {
+  position: relative;
+  display: inline-block;
+}
+.star_3 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_3:hover .img-top {
+  display: inline;
+}
+.star_4 {
+  position: relative;
+  display: inline-block;
+}
+.star_4 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_4:hover .img-top {
+  display: inline;
+}
+.star_5 {
+  position: relative;
+  display: inline-block;
+}
+.star_5 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_5:hover .img-top {
+  display: inline;
+}
+.star_6 {
+  position: relative;
+  display: inline-block;
+}
+.star_6 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_6:hover .img-top {
+  display: inline;
+}
+.star_7 {
+  position: relative;
+  display: inline-block;
+}
+.star_7 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_7:hover .img-top {
+  display: inline;
+}
+.star_8 {
+  position: relative;
+  display: inline-block;
+}
+.star_8 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.star_8:hover .img-top {
+  display: inline;
+} */
