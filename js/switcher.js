@@ -5,7 +5,7 @@ let incomeBtn = document.querySelector('#income_btn');
 
 $(document).ready(function() {
     $('#power_btn').hover(function(){
-        let img = "../images/bg_2.png";
+        let img = "./images/bg_2.png";
         $(".puzzle").css("background-image", "url(" + img + ")");
     });
     $('#wing_btn').hover(function(){
