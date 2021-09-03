@@ -7,11 +7,9 @@
     <link href="tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
-    <!-- <link rel="stylesheet" href="./css/webslides.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/font.css">
-    <!-- <link rel="stylesheet" href="./css/slide.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/switcher.css">
     <link rel="stylesheet" href="./css/rwd.css">
@@ -25,12 +23,15 @@
                     <a href="#" class="btn">開始申請</a>
                 </div>
             </div>
-            <div class="video-container">
-                <video class="" src="./images/Sunrise.mp4" id="video" loop autoplay muted></video>
-            </div>
+            <!-- <div class="video-container ">
+                <video class=""  id="video" loop autoplay muted></video>
+            </div> -->
+            <video autoplay muted loop id="myVideo" poster="./images/pic2.jpg">
+                <source src="./images/Sunrise.mp4" type="video/mp4">
+            </video>
     </section>
 
-    <section class="section-1 lg:flex my-0">
+    <section class="section-1  my-0">
         <div class="pic1 ">
             <img src="./images/0_1.png" alt="">
             <img src="./images/1.png" class="img-top" alt="">
@@ -73,6 +74,13 @@
     <section class="plan">
             <div class="row style-switcher">
                 <div class="box1">
+                    <div class="plan1">
+                        <img src="./images/plan-001.png" alt="">
+                        <img src="./images/plan-002.png" alt="">
+                        <img src="./images/plan-003.png" alt="">
+                        <a href="#" class="plan-004"></a>
+                        
+                    </div>
                     <img src="./images/bg1.png" id="top" alt="">
                     <div class="hover-style-switcher">
                         <img src="./images/plan_header1.png" id="down" alt="">
@@ -94,18 +102,14 @@
     </section>
 
     <section class="open_class grid grid-cols-2">
-        <div class="aside">
-            <div class="video1">
-                    <video id="my-video" class="video-js" controls preload="auto" width="960" height="500" poster="./images/pic1.jpg"
-                        data-setup="{}">
-                        <source src="./images/Sunrise.mp4" type="video/mp4" width="960" height="670" />
+        <!-- <div class="aside"> -->
+            <!-- <div class="vjs-matrix"> -->
+                    <video id="my-video" class="vjs-matrix video-js" controls preload="auto" width="960" height="100" poster="./images/video-poster.png"
+                        data-setup=''>
+                        <source src="./images/Privacy on iPhone _ Tracked _ Apple.mp4" type="video/mp4" />
                     </video>
-            </div>
-            <div class="video-word">
-                 <h3>開課很簡單</h3>
-                 <h2>你也可以開課</h2>
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
         <div class="aside-right  grid grid-cols-2">
         <div class="open_pic">
             <img src="https://fakeimg.pl/480x480/">

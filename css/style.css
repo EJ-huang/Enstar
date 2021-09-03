@@ -42,7 +42,7 @@ html {
 } */
 
 .aside {
-  height: 960px;
+  height: 100px;
   background-color: #fff1e2;
 }
 .plan .box1 {
@@ -70,7 +70,7 @@ html {
 .home {
   display: flex;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   align-items: center;
   flex-flow: column;
   z-index: 0;
@@ -80,6 +80,11 @@ html {
   top: 30%;
   margin: 0 0 40px;
   text-align: center;
+}
+.home .video-container video {
+  position: relative;
+  background-image: url("../images/Sunrise.mp4");
+  height: 100vh;
 }
 .btn {
   display: inline-block;
@@ -175,12 +180,10 @@ html {
 
 .content-view .puzzle {
   position: relative;
-  /* width: 100vw; */
   height: 100vh;
-  /* background: rgba(0, 0, 0, 0.7); */
   background-image: url("../images/bg.png");
   background-position: center;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 /* #puzzle {
   position: relative;
@@ -267,6 +270,11 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 
+/* plan */
+.plan .box1 .plan1 {
+  display: none;
+}
+
 /* open_class */
 
 /* .open_class {
@@ -285,6 +293,14 @@ html {
 
 .open_pic {
   object-fit: fit;
+}
+/* .open_pic .grid {
+  align-items: stretch !important;
+} */
+.vjs-matrix.video-js {
+  color: #fa0;
+  height: 102vh;
+  background-color: #000;
 }
 
 /* 開課Hover */
