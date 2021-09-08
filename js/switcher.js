@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".puzzle").css("background-image", "url(" + img + ")");
     });
     $('#wing_btn').hover(function(){
-        let img = "./images/bg.png";
+        let img = "./images/bg_4.png";
         $(".puzzle").css("background-image", "url(" + img + ")");
     });
     $('#income_btn').hover(function(){
