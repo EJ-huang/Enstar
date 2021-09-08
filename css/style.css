@@ -37,7 +37,7 @@ html {
 }
 .home .video-container video {
   position: relative;
-  background-image: url("../images/Sunrise.mp4");
+  /* background-image: url("../images/Sunrise.mp4"); */
   height: 100vh;
 }
 .btn {
