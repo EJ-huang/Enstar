@@ -7,29 +7,31 @@
     <link href="tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
-    <!-- <link rel="stylesheet" href="./css/webslides.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/font.css">
-    <!-- <link rel="stylesheet" href="./css/slide.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/switcher.css">
+    <link rel="stylesheet" href="./css/rwd.css">
     <title>Enstar</title>
 </head>
 <body>
-    <section class="home">
+    <section class="home ">
             <div class="content">
                 <img src="./images/header.png" alt="">
                 <div class="box">
-                    <a href="#" class="btn">開始申請</a>
+                    <a href="#" class="btn"><img src="./images/statr1.png" alt=""></a>
                 </div>
             </div>
-            <div class="video-container">
-                <video class="" src="./images/Sunrise.mp4" id="video" loop autoplay muted></video>
-            </div>
+            <!-- <div class="video-container ">
+                <video class=""  id="video" loop autoplay muted></video>
+            </div> -->
+            <video autoplay muted loop id="myVideo" >
+                <source src="./images/Sunrise.mp4" type="video/mp4">
+            </video>
     </section>
 
-    <section class="section-1 lg:flex my-0">
+    <section class="section-1  my-0">
         <div class="pic1 ">
             <img src="./images/0_1.png" alt="">
             <img src="./images/1.png" class="img-top" alt="">
@@ -48,15 +50,6 @@
         </div>
     </section>
 
-    <!-- <section class="content">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/puzzle_0.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/puzzle_1.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/puzzle_2.png" alt=""></div>
-                <div class="swiper-slide"><img src="./images/puzzle_3.png" alt=""></div>
-        </div>
-    </section> -->
     <section class="content-view">
         <div class="puzzle">
             <div class="box">
@@ -81,98 +74,101 @@
     <section class="plan">
             <div class="row style-switcher">
                 <div class="box1">
+                    <div class="plan1">
+                        <img src="./images/plan-001.png" alt="">
+                        <img src="./images/plan-002.png" alt="">
+                        <img src="./images/plan-003.png" alt="">
+                        <a href="#" class="plan-004"></a>
+                        
+                    </div>
                     <img src="./images/bg1.png" id="top" alt="">
                     <div class="hover-style-switcher">
                         <img src="./images/plan_header1.png" id="down" alt="">
+                       
                         <div class="box2">
-                            <div class="flex flex-wrap flex-auto">
-                                <img src="./images/plan_header.png" alt="">
-                                <div class="row">
-                                    <img src="./images/process.png" id="pro" alt="">
-                                    <!-- <img src="./images/statr1.png" id="pro2" alt=""> -->
+                            <!-- <div class="flex flex-flow"> -->
+                                <div class="row-onside" id="up">
+                                    <img src="./images/plan_header.png" alt="">
                                 </div>
-                                    
-                            </div>
-
-                            <!-- <img src="./images/lesson.png" alt=""> -->
+                                <div class="row-inside">
+                                    <img src="./images/process.png" id="pro" alt="">
+                                    <img src="./images/statr1.png" id="pro2" alt="">
+                                </div>
+                            <!-- </div> -->
                         </div>
-                    </div>
+                     </div>
                 </div>
                 
             </div>
     </section>
 
-    <section class="open_class grid grid-cols-2">
-        <div class="aside">
-            <div class="video1">
-                    <video id="my-video" class="video-js" controls preload="auto" width="960" height="500" poster="./images/pic1.jpg"
-                        data-setup="{}">
-                        <source src="./images/Sunrise.mp4" type="video/mp4" width="960" height="670" />
+    <section class="open_class grid grid-cols-none lg:grid-cols-2">
+                    <video id="my-video" class="vjs-matrix video-js" controls preload="auto" width="960" height="100" poster="./images/video-poster.png"
+                        data-setup=''>
+                        <source src="./images/Privacy on iPhone _ Tracked _ Apple.mp4" type="video/mp4" />
                     </video>
-            </div>
-            <div class="video-word">
-                 <h3>開課很簡單</h3>
-                 <h2>你也可以開課</h2>
-            </div>
-        </div>
-        <div class="aside-right  grid grid-cols-2">
+        <div class="aside-right  grid grid-cols-none lg:grid-cols-2">
         <div class="open_pic">
-            <img src="https://fakeimg.pl/480x480/">
-            <img src="https://picsum.photos/480/480" class="img-top" alt="">
+            <img src="./images/milestone.png">
+            <img src="./images/knowledge1.png" class="img-top" alt="">
         </div>
         <div class="open_pic2 bg-red-300">
-            <img src="https://fakeimg.pl/480x480/">
-            <img src="https://picsum.photos/480/480?random=4" class="img-top" alt="">
+            <img src="./images/knowledge.png">
+            <img src="./images/milestone1.png" class="img-top" alt="">
         </div>
         <div class="open_pic3 bg-purple-300">
-            <img src="https://fakeimg.pl/480x480/">
-            <img src="https://picsum.photos/480/480" class="img-top" alt="">
+            <img src="./images/curve.png">
+            <img src="./images/curve1.png" class="img-top" alt="">
         </div>
         <div class="open_pic4 bg-blue-300">
-            <img src="https://fakeimg.pl/480x480/">
-            <img src="https://picsum.photos/480/480?random=3" class="img-top" alt="">
+            <img src="./images/allstar.png">
+            <!-- <img src="" class="img-top" alt=""> -->
         </div>
         </div>
     </section>
 
-    <section class="teacher grid grid-cols-4 h-screen">
-            <div class="aside">講師見證</div>
+    <section class="teacher grid min-h-full   md:auto-cols-min lg:grid-cols-5">
+            <div class="aside"><img src="./images/teacher_say.png" alt=""></div>
             <div class="teacher-1">
-                <img src="https://picsum.photos/480/480?random=1">             
-                    <div class="teacher-content">
-                        <a href="https://enstar.com.tw/" class="btn-teacher">查看課程</a>
-                    </div>
-                
-                <div class="teacher-inside">
-                    <h3>Teacher</h3>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cum voluptatum qui nesciunt corrupti eveniet accusamus tempore vel. Saepe vero perspiciatis veritatis optio quisquam libero dolorum fuga accusamus numquam deserunt?</span>
-                    
+                <img src="./images/teacher001.png">             
+                <div class="teacher-content bg-light-blue-600 opacity-25">
+
+                    <button
+                        class="bg-transparent mt-40  hover:bg-white-500  font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <a href="https://enstar.com.tw/">查看課程 </a>
+                    </button>
                 </div>
             </div>
             <div class="teacher-1">
-                <img src="https://picsum.photos/480/480">
-                <div class="teacher-content">
-                    <a href="#" class="btn-teacher">查看課程</a>
-                </div>
-                
-                <div class="teacher-inside">
-                    <h3>Teacher</h3>
-                    <span>Lorem ipsu`m dolor sit amet, consectetur adipisicing elit. Delectus praesentium corrupti ipsam doloribus, error quae magnam sequi illo atque cum? Officia repellat dolores, quis ducimus tempore nisi placeat excepturi, fugiat labore aliquam enim atque. Eaque molestias porro ipsam! Aut nulla, itaque fugit aliquid nobis possimus beatae unde. Provident eius sunt, perferendis assumenda quis iste labore ipsa voluptate obcaecati, voluptates, similique debitis aperiam laboriosam magni ab accusantium. Atque aut laborum ratione deserunt libero, doloremque a`rchitecto maxime, magnam distinctio dicta eaque minus ipsum vero id perferendis consequuntur eveniet, dolores quisquam rerum. Mollitia est eligendi aut reprehenderit, sunt iure excepturi consectetur nobis ex?</span>
+                <img src="./images/teacher002.png">
+                <div class="teacher-content bg-light-blue-600 opacity-25">
                     
+                    <button
+                        class="bg-transparent mt-40  hover:bg-white-500  font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <a href="https://enstar.com.tw/">查看課程 </a>
+                    </button>
                 </div>
             </div>
             <div class="teacher-1">
-                <img src="https://picsum.photos/480/480?random=2">
-                    <div class="teacher-content">
-                        <a href="#" class="btn-teacher">查看課程</a>
-                    </div>
-                
-                <div class="teacher-inside">
-                    <h3>Teacher</h3>
-                    <span>Lorem ipsu`m dolor sit amet, consectetur adipisicing elit. Delectus praesentium corrupti ipsam doloribus, error</span>
+                <img src="./images/teacher003.png">
+                    <div class="teacher-content bg-light-blue-600 opacity-25">
                     
+                        <button
+                            class="bg-transparent mt-40  hover:bg-white-500  font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                            <a href="https://enstar.com.tw/">查看課程 </a>
+                        </button>
+                    </div>
+            </div> 
+            <div class="teacher-1">
+                <img src="./images/teacher004.png">
+                <div class="teacher-content bg-light-blue-600 opacity-25">
+                
+                    <button
+                        class="bg-transparent mt-40  hover:bg-white-500  font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <a href="https://enstar.com.tw/">查看課程 </a>
+                    </button>
                 </div>
-            </div>            
+            </div>
     </section>
     <section class="star">
         <div class="grid grid-cols-5">

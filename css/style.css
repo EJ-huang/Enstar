@@ -3,69 +3,9 @@ html {
   padding: 0;
 }
 
-/* .box .swiper-wrapper {
-  width: 100%;
-} */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-container {
-  position: relative;
-  max-width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.swiper-slide {
-  height: 100%;
-  text-align: center;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-}
-/* .mySwiper {
-  width: 100%;
-  height: auto;
-}
-.swiper-slide {
-  width: auto;
-  height: auto;
-}
-.mySwiper img {
-  width: 100%;
-  height: auto;
-} */
-
 .aside {
-  height: 960px;
+  /* height: 100px; */
   background-color: #fff1e2;
-}
-.plan .box1 {
-  position: relative;
-}
-.plan .box1 #down {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.plan .box2 {
 }
 
 .teacher .aside {
@@ -76,15 +16,15 @@ html {
   color: #fff;
 }
 
-.teacher .teacher1 {
+/* .teacher .teacher1 {
   background-color: blue;
-}
+} */
 
 /*  home */
 .home {
   display: flex;
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   align-items: center;
   flex-flow: column;
   z-index: 0;
@@ -94,6 +34,11 @@ html {
   top: 30%;
   margin: 0 0 40px;
   text-align: center;
+}
+.home .video-container video {
+  position: relative;
+  /* background-image: url("../images/Sunrise.mp4"); */
+  height: 100vh;
 }
 .btn {
   display: inline-block;
@@ -189,12 +134,10 @@ html {
 
 .content-view .puzzle {
   position: relative;
-  /* width: 100vw; */
   height: 100vh;
-  /* background: rgba(0, 0, 0, 0.7); */
   background-image: url("../images/bg.png");
   background-position: center;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
 }
 /* #puzzle {
   position: relative;
@@ -281,6 +224,25 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 
+/* plan */
+.plan .box1 .plan1 {
+  display: none;
+}
+.plan .box1 {
+  position: relative;
+  display: block;
+}
+.plan .box1 #down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.plan .box2 {
+  /* display: block; */
+}
+.plan .row-inside {
+  /* padding: 0; */
+}
 /* open_class */
 
 /* .open_class {
@@ -296,12 +258,17 @@ html {
   padding-top: 5rem;
   color: #ff9900;
 }
-/* .open_class .video-word:before {
-  content: "";
-  flex-grow: 0.5;
-} */
+
 .open_pic {
   object-fit: fit;
+}
+/* .open_pic .grid {
+  align-items: stretch !important;
+} */
+.vjs-matrix.video-js {
+  color: #fa0;
+  height: 102vh;
+  background-color: #000;
 }
 
 /* 開課Hover */
@@ -388,8 +355,8 @@ html {
   margin-top: 70px;
 }
 .teacher .teacher-1 img {
-  /* height: 100%;
-  width: 100%; */
+  /* height: 100%; */
+  width: 100%;
   object-fit: cover;
 }
 .teacher-1 {
@@ -400,16 +367,17 @@ html {
 .teacher-content {
   position: absolute;
   width: 100%;
-  /* height: 100%; */
-  top: -100%;
+  height: 55%;
+  top: 0;
   left: 0;
   text-align: center;
   background: rgba(52, 152, 219, 0.5);
-  padding-top: 5rem;
+  padding-top: 15rem;
   padding: 2rem;
+  opacity: 0;
 }
 .teacher-1:hover .teacher-content {
-  top: 20%;
+  opacity: 1;
 }
 
 /* star */

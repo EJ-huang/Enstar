@@ -1,0 +1,106 @@
+/* Responsive */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  .section .hone {
+    padding-top: 70px;
+  }
+  .content {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 991) {
+  .home {
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  video {
+    max-width: fit-content;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #myVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #myVideo {
+    display: none;
+  }
+  body {
+    background: url("../images/pic3.jpg");
+    background-size: cover;
+  }
+  .home {
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  .home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home img {
+    width: 80rem;
+  }
+  .section-1 {
+    flex-direction: column;
+  }
+  .content-view .puzzle {
+    background-image: url("../images/bg1.png");
+    background-position-x: left;
+  }
+  .content-view .puzzle .box {
+    left: 0;
+    width: 100vw;
+  }
+  .puzzle .power h3 {
+    font-size: 50px;
+  }
+  .plan {
+    width: 100%;
+  }
+  .plan .box1 #top {
+    display: none;
+  }
+  .plan .box1 .plan1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .plan .box1 .plan1 .plan-004 {
+    background-image: url("../images/start.png");
+    background-size: cover;
+    width: auto;
+    height: 50vh;
+  }
+  .plan .box1 .plan1 .plan-004:hover {
+    background-image: url("../images/start2.png");
+  }
+  .plan .hover-style-switcher {
+    display: none;
+  }
+}
+
+@media (max-width: 575) {
+  video {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 376) {
+  .puzzle .power h3 {
+    font-size: 50px;
+  }
+}
