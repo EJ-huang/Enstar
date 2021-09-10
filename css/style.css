@@ -49,6 +49,7 @@ html {
   height: 200px;
   color: #fa0;
   font-family: "源ノ角ゴシック";
+  filter: opacity(0.6);
 }
 /* .home .video-container video {
   position: absolute;
