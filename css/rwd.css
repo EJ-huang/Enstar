@@ -66,9 +66,7 @@
   .home img {
     width: 80rem;
   } */
-  .section-1 {
-    flex-direction: column;
-  }
+
   .content-view .puzzle {
     background-image: url("../images/bg1.png");
     background-position-x: left;
