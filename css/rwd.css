@@ -28,18 +28,29 @@
     height: auto;
   }
 }
-@media (max-aspect-ratio: 16/9) {
-  #myVideo {
-    width: auto;
-    height: 100%;
+@media (max-width: 1024px) {
+  .home #myVideo {
+    display: none;
+  }
+  .home #myVideo2 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
   }
 }
 
 @media (max-width: 768px) {
-  #myVideo {
+  /* .home #myVideo2 {
     display: none;
   }
-  body {
+  .home #myVideo2 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  } */
+  /* body {
     background: url("../images/pic3.jpg");
     background-size: cover;
   }
@@ -54,7 +65,7 @@
   }
   .home img {
     width: 80rem;
-  }
+  } */
   .section-1 {
     flex-direction: column;
   }
