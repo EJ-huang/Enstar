@@ -66,15 +66,35 @@
   .home img {
     width: 80rem;
   } */
+  .home .box1 #pc {
+    display: none;
+  }
+  .home .box1 #pc2 {
+    display: block;
+  }
 
   .content-view .puzzle {
-    background-image: url("../images/bg1.png");
-    background-position-x: left;
+    background-image: none;
+    height: auto;
   }
   .content-view .puzzle .box {
     left: 0;
     width: 100vw;
+    display: none;
   }
+  .content-view .box_2 .slide {
+    position: relative;
+    display: inline-block;
+  }
+  .box_2 .dropdown {
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  .slide:hover .dropdown {
+    display: block;
+  }
+
   .puzzle .power h3 {
     font-size: 50px;
   }

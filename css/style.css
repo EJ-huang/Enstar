@@ -44,6 +44,9 @@ html {
   display: flex;
   justify-content: center;
 }
+.home .box1 #pc2 {
+  display: none;
+}
 .home #myVideo {
   display: block;
 }
@@ -183,6 +186,7 @@ a:hover {
   background-position: center;
   background-size: cover;
 }
+
 /* #puzzle {
   position: relative;
   margin: 0 auto 10px;
