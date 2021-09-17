@@ -58,7 +58,7 @@
 .row-inside #pro {
   position: absolute;
   /* float: left; */
-  width: 57vw;
+  width: 60vw;
   height: 90%;
 }
 .row-inside #pro2 {
@@ -68,7 +68,7 @@
   position: absolute;
   z-index: 5;
   right: 0;
-  width: 32%;
+  bottom: 0;
   /* float: right; */
   /* height: 100%; */
 }
