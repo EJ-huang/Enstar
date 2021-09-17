@@ -473,7 +473,7 @@ a:hover {
 .teacher-say3 {
   position: absolute;
   z-index: 1;
-  bottom: 90px;
+  bottom: 0;
   padding: 50px;
   color: #fff;
   font-family: "源ノ角ゴシック";
