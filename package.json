@@ -1,0 +1,35 @@
+{
+  "name": "enstar",
+  "version": "1.0.0",
+  "description": "招募首頁",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "tailwindcss": "^2.2.8",
+    "swiper": "^7.0.1",
+    "video.js": "^7.14.3",
+    "webpack": "^5.53.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "start": "cross-env NODE_ENV=development webpack --mode development",
+    "deploy": "cross-env NODE_ENV=production webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJ-huang/Enstar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJ-huang/Enstar/issues"
+  },
+  "homepage": "https://github.com/EJ-huang/Enstar#readme"
+}

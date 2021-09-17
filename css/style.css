@@ -23,7 +23,7 @@ html {
 /*  home */
 .home {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   align-items: center;
   flex-flow: column;
   z-index: 0;
@@ -35,9 +35,11 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 .home .content {
   position: absolute;
+  z-index: 2;
   top: 30%;
   margin: 0 0 40px;
   text-align: center;
@@ -97,11 +99,11 @@ a:hover {
   object-fit: cover;
 } */
 
-.content .box {
+.content a {
   position: absolute;
   width: 147px;
   height: 156px;
-  margin-top: 300px;
+  margin-top: 20rem;
   background-image: url("../images/start2.png");
   background-position: center;
   background-size: cover;
@@ -115,14 +117,13 @@ a:hover {
 
 /* Section-1 */
 .section-1 {
-  /* position: absolute; */
-  /* display: flex; */
-  /* gap: 1.5rem; */
+  position: relative;
+  padding: 0 140px;
 }
 
 .section-1 .pic1 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .section-1 .pic1 .img-top {
   display: none;
@@ -136,7 +137,7 @@ a:hover {
 }
 .section-1 .pic2 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .section-1 .pic2 .img-top {
   display: none;
@@ -150,7 +151,7 @@ a:hover {
 }
 .pic3 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .pic3 .img-top {
   display: none;
@@ -164,7 +165,7 @@ a:hover {
 }
 .pic4 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .pic4 .img-top {
   display: none;
@@ -178,7 +179,10 @@ a:hover {
 }
 
 /* Content-view */
-
+.content-view {
+  position: relative;
+  padding: 0 140px;
+}
 .content-view .puzzle {
   position: relative;
   height: 100vh;
@@ -273,12 +277,14 @@ a:hover {
 }
 
 /* plan */
-.plan .box1 .plan1 {
-  display: none;
+.plan {
+  position: relative;
+  padding: 0 140px;
 }
 .plan .box1 {
   position: relative;
-  display: block;
+  display: flex;
+  z-index: 2;
 }
 .plan .box1 #down {
   position: absolute;
@@ -293,10 +299,10 @@ a:hover {
 }
 /* open_class */
 
-/* .open_class {
-  height: 100%;
+.open_class {
   position: relative;
-} */
+  padding: 0 140px;
+}
 
 .open_class .video-word {
   flex-direction: column;
@@ -327,6 +333,9 @@ a:hover {
 .open_pic img {
   width: 100%;
   height: 100%;
+}
+.aside-right img {
+  object-fit: fit;
 }
 .open_pic .img-top {
   display: none;
@@ -394,7 +403,10 @@ a:hover {
 }
 
 /* Teacher */
-
+.teacher {
+  position: relative;
+  padding: 0 140px;
+}
 .teacher .teacher-inside {
   margin-top: 40px;
   text-align: center;
@@ -430,8 +442,8 @@ a:hover {
 
 /* star */
 .star {
-  /* height: 1150px; */
-  background-color: #fff1e2;
+  padding: 0 140px;
+  /* background-color: #fff1e2; */
   position: relative;
   align-items: center;
 }
@@ -442,7 +454,7 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
-.star_1 .slide-in {
+/* .star_1 .slide-in {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -486,7 +498,7 @@ a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-}
+} */
 .align-left {
   float: left;
   margin-right: 20px;
@@ -499,6 +511,19 @@ a:hover {
 .slide-in {
   opacity: 0;
   transition: all 0.5s;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #ff9900;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  font-family: "源ノ角ゴシック";
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* .align-left.slide-in {
@@ -539,9 +564,9 @@ a:hover {
   display: inline;
 } */
 
-/* .star_1 {
+.star_1 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_1 .img-top {
   display: none;
@@ -555,7 +580,7 @@ a:hover {
 }
 .star_2 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_2 .img-top {
   display: none;
@@ -569,7 +594,7 @@ a:hover {
 }
 .star_3 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_3 .img-top {
   display: none;
@@ -583,7 +608,7 @@ a:hover {
 }
 .star_4 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_4 .img-top {
   display: none;
@@ -597,7 +622,7 @@ a:hover {
 }
 .star_5 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_5 .img-top {
   display: none;
@@ -611,7 +636,7 @@ a:hover {
 }
 .star_6 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_6 .img-top {
   display: none;
@@ -625,7 +650,7 @@ a:hover {
 }
 .star_7 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_7 .img-top {
   display: none;
@@ -639,7 +664,7 @@ a:hover {
 }
 .star_8 {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .star_8 .img-top {
   display: none;
@@ -650,4 +675,4 @@ a:hover {
 }
 .star_8:hover .img-top {
   display: inline;
-} */
+}

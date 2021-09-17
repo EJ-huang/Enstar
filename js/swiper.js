@@ -11,13 +11,17 @@
 
 
 
-    let swiper = new Swiper(".mySwiper",{
+    let swiper = new Swiper(".swiper-container",{
       // direction: "vertical",
+       slidesPerView: 1,
       mousewheel: {
         invert: true
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      //   clickable: true
-      // }
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
     });

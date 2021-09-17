@@ -1,15 +1,15 @@
 /* Responsive */
 
 @media (max-width: 1024px) {
-  html {
-    font-size: 55%;
-  }
-  .section .hone {
-    padding-top: 70px;
-  }
-  .content {
-    width: 100vw;
-  }
+  /* html {
+      font-size: 55%;
+    }
+    .section .hone {
+      padding-top: 70px;
+    }
+    .content {
+      width: 100vw;
+    } */
 }
 
 @media (max-width: 991) {
@@ -28,6 +28,11 @@
     height: auto;
   }
 }
+@media (min-width: 1024px) {
+  .content .box {
+    margin-top: 13rem;
+  }
+}
 @media (max-width: 1024px) {
   .home #myVideo {
     display: none;
@@ -38,9 +43,101 @@
     width: 100%;
     height: 100vh;
   }
+  .content .box {
+    /* margin-top: 13rem; */
+  }
+  .content-view .puzzle .box {
+    left: 0;
+    width: 100vw;
+    /* display: none; */
+  }
+  .content-view .box_2 .slide {
+    position: relative;
+    display: inline-block;
+  }
+  .box_2 .dropdown {
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  .slide:hover .dropdown {
+    display: block;
+  }
+  .plan .box3 {
+    position: relative;
+  }
+  .plan .box3 #step {
+    position: relative;
+    z-index: 2;
+  }
+  .plan .box3 #apply {
+    position: relative;
+    top: -23px;
+    z-index: 1;
+  }
+  .open_class .open_pic {
+    position: relative;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-container {
+    position: relative;
+    width: 100vw;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .teacher-2 {
+    width: 100%;
+  }
+  .teacher .teacher-1 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .section-1 {
+    padding: 0;
+  }
+  .content-view {
+    padding: 0;
+  }
+  .plan {
+    padding: 0;
+  }
+  .open_class {
+    padding: 0;
+  }
+  .teacher {
+    padding: 0;
+  }
+  .star {
+    padding: 0;
+  }
   /* .home #myVideo2 {
     display: none;
   }
@@ -84,7 +181,10 @@
   }
   .content-view .box_2 .slide {
     position: relative;
-    display: inline-block;
+    display: block;
+  }
+  .content-view .box_2 .slide img {
+    display: block;
   }
   .box_2 .dropdown {
     display: none;
@@ -101,7 +201,7 @@
   .plan {
     width: 100%;
   }
-  .plan .box1 #top {
+  .plan .box1 {
     display: none;
   }
   .plan .box1 .plan1 {
@@ -119,6 +219,9 @@
   }
   .plan .hover-style-switcher {
     display: none;
+  }
+  .open_pic {
+    /* position: absolute; */
   }
 }
 
