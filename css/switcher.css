@@ -34,7 +34,7 @@
   position: absolute;
   top: -45px;
   right: 0;
-  opacity: 0;
+  z-index: 6;
 }
 .row-onside {
   top: 0;
@@ -62,7 +62,7 @@
   height: 90%;
 }
 .row-inside #pro2 {
-  /* width: 30vw; */
+  width: 24vw;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -96,15 +96,14 @@
 }
 
 .box2 .row-inside img {
-  opacity: 0;
+  /* opacity: 0; */
   /* top: 600px; */
 }
 
-.hover-style-switcher:hover img {
+/* .hover-style-switcher:hover img {
   opacity: 1;
-  /* top: 50px; */
   transition: top 0.6s;
 }
 .hover-style-switcher:hover #down {
   display: none;
-}
+} */
