@@ -81,6 +81,13 @@
   .open_class .open_pic {
     position: relative;
   }
+  .open_class .open1 {
+    display: flex;
+  }
+  .open_class .aside-right .open_pic,
+  .open_class .aside-right .open_pic2 {
+    display: none;
+  }
   .swiper {
     width: 100%;
     height: 100%;
