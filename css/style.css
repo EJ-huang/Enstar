@@ -117,11 +117,18 @@ a:hover {
 .section-1 {
   position: relative;
   padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 
 .section-1 .pic1 {
   position: relative;
   display: block;
+  border: 5px solid #fff;
+  border-radius: 5%;
+}
+.section-1 .pic1 img {
+  border: 2px solid #fff;
+  border-radius: 5%;
 }
 .section-1 .pic1 .img-top {
   display: none;
@@ -136,6 +143,11 @@ a:hover {
 .section-1 .pic2 {
   position: relative;
   display: block;
+  border: 5px solid #fff;
+  border-radius: 5%;
+}
+.section-1 .pic2 img {
+  border-radius: 5%;
 }
 .section-1 .pic2 .img-top {
   display: none;
@@ -143,6 +155,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 99;
+  border: 1px solid #fff;
 }
 .section-1 .pic2:hover .img-top {
   display: inline;
@@ -150,6 +163,12 @@ a:hover {
 .pic3 {
   position: relative;
   display: block;
+  border: 5px solid #fff;
+  border-radius: 5%;
+}
+.section-1 .pic3 img {
+  border: 2px solid #fff;
+  border-radius: 5%;
 }
 .pic3 .img-top {
   display: none;
@@ -157,6 +176,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
 .pic3:hover .img-top {
   display: inline;
@@ -164,6 +184,12 @@ a:hover {
 .pic4 {
   position: relative;
   display: block;
+  border: 5px solid #fff;
+  border-radius: 5%;
+}
+.section-1 .pic4 img {
+  border: 2px solid #fff;
+  border-radius: 5%;
 }
 .pic4 .img-top {
   display: none;
@@ -171,6 +197,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
 .pic4:hover .img-top {
   display: inline;
@@ -180,13 +207,15 @@ a:hover {
 .content-view {
   position: relative;
   padding: 0 140px;
+  background-color: #ffe8c4;
 }
 .content-view .puzzle {
   position: relative;
-  height: 100vh;
-  background-image: url("../images/bg.png");
+  height: 50vh;
+  background-image: url("../images/teacher_power.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .content-view .puzzle .bg-image {
   position: relative;
@@ -288,11 +317,16 @@ a:hover {
 .plan {
   position: relative;
   padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 .plan .box1 {
   position: relative;
   display: flex;
   z-index: 2;
+  height: 50vh;
+  background-image: url(../images/double_teacher.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .plan .box1 #down {
   position: absolute;
@@ -302,21 +336,25 @@ a:hover {
 .plan .box2 {
   /* display: block; */
 }
+.plan .style-switcher {
+  /* padding-left: 14.5rem; */
+}
 .plan .row-inside a {
   position: relative;
   height: 100%;
-  background-image: url(../images/statr1.png);
+  background-image: url(../images/double_btn1.png);
   background-position: center;
   background-size: cover;
 }
 .plan .row-inside a:hover {
-  background-image: url(../images/start2.png);
+  background-image: url(../images/double_btn2.png);
 }
 /* open_class */
 
 .open_class {
   position: relative;
   padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 .open_class .open1 {
   display: none;
@@ -334,6 +372,7 @@ a:hover {
 .vjs-matrix.video-js {
   color: #fa0;
   background-color: #000;
+  border-radius: 5%;
 }
 
 /* 開課Hover */
@@ -341,12 +380,14 @@ a:hover {
   position: relative;
   display: inline-block;
   /* padding: 20px; */
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic img {
   /* width: 100%; */
   /* height: 100%; */
   --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
 }
 .aside-right img {
   /* object-fit: fit; */
@@ -364,12 +405,14 @@ a:hover {
 .open_pic2 {
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic2 img {
   /* width: 100%;
   height: 100%; */
   --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
 }
 .open_pic2 .img-top {
   display: none;
@@ -384,12 +427,14 @@ a:hover {
 .open_pic3 {
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic3 img {
   /* width: 100%;
   height: 100%; */
   --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
 }
 .open_pic3 .img-top {
   display: none;
@@ -404,12 +449,14 @@ a:hover {
 .open_pic4 {
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic4 img {
   /* width: 100%;
   height: 100%; */
   --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
 }
 .open_pic4 .img-top {
   display: none;
@@ -426,6 +473,7 @@ a:hover {
 .teacher {
   position: relative;
   padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 .teacher .teacher-inside {
   margin-top: 40px;
@@ -495,8 +543,8 @@ a:hover {
 .teacher-content {
   position: absolute;
   width: 100%;
-  height: 55%;
-  top: 0;
+  height: 54%;
+  top: 20px;
   left: 0;
   text-align: center;
   background: rgba(52, 152, 219, 0.5);
@@ -517,6 +565,7 @@ a:hover {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  background-color: #ffe8c4;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -534,17 +583,19 @@ a:hover {
 }
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  height: 50vh;
   object-fit: cover;
+  border-radius: 5%;
+  padding-top: 20px;
 }
 
 /* star */
 .star {
   padding: 20px 140px;
-  /* background-color: #fff1e2; */
   position: relative;
   align-items: center;
+  background-color: #ffe8c4;
 }
 .star .box {
   position: relative;
