@@ -62,16 +62,15 @@
   height: 90%;
 }
 .row-inside #pro2 {
-  width: 20vw;
+  width: 15vw;
+  height: 230px;
   margin: 0;
   padding: 0;
   position: absolute;
   z-index: 5;
-  right: 0;
+  right: 60px;
   bottom: 0;
-  top: 0;
-  /* float: right; */
-  /* height: 100%; */
+  top: 33.5%;
 }
 .row-inside #pro3 {
   position: absolute;

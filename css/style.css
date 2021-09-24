@@ -14,6 +14,7 @@ html {
   text-align: center;
   background-color: #ff9900;
   color: #fff;
+  border-radius: 5%;
 }
 
 /* .teacher .teacher1 {
@@ -76,19 +77,19 @@ html {
 } */
 .btn {
   /* display: inline-block; */
-  margin-top: 5rem;
+  /* margin-top: 5rem;
   background: #fff;
-  font-size: 68px;
+  font-size: 68px; */
   width: 200px;
   height: 200px;
-  color: #fa0;
-  font-family: "源ノ角ゴシック";
-  filter: opacity(0.6);
+  /* color: #fa0;
+  font-family: "源ノ角ゴシック"; */
+  /* filter: opacity(0.6); */
 }
-a:hover {
+/* a:hover {
   filter: opacity(1);
   background-color: #fa0;
-}
+} */
 /* .home .video-container video {
   position: absolute;
   top: 0;
@@ -105,9 +106,12 @@ a:hover {
   height: 156px; */
   /* width: 20rem; */
   margin-top: 18rem;
-  background-image: url("../images/start2.png");
+  background-image: url("../images/start22.png");
   background-position: center;
   background-size: cover;
+}
+.content a:hover {
+  background-image: url("../images/start2.png");
 }
 .content .box:hover {
   background-image: url("../images/star3.png") no-repeat;
@@ -123,11 +127,9 @@ a:hover {
 .section-1 .pic1 {
   position: relative;
   display: block;
-  border: 5px solid #fff;
-  border-radius: 5%;
 }
 .section-1 .pic1 img {
-  border: 2px solid #fff;
+  border: 5px solid #fff;
   border-radius: 5%;
 }
 .section-1 .pic1 .img-top {
@@ -136,6 +138,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
 .section-1 .pic1:hover .img-top {
   display: inline;
@@ -143,10 +146,9 @@ a:hover {
 .section-1 .pic2 {
   position: relative;
   display: block;
-  border: 5px solid #fff;
-  border-radius: 5%;
 }
 .section-1 .pic2 img {
+  border: 5px solid #fff;
   border-radius: 5%;
 }
 .section-1 .pic2 .img-top {
@@ -155,7 +157,7 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 99;
-  border: 1px solid #fff;
+  border-radius: 5%;
 }
 .section-1 .pic2:hover .img-top {
   display: inline;
@@ -163,11 +165,9 @@ a:hover {
 .pic3 {
   position: relative;
   display: block;
-  border: 5px solid #fff;
-  border-radius: 5%;
 }
 .section-1 .pic3 img {
-  border: 2px solid #fff;
+  border: 5px solid #fff;
   border-radius: 5%;
 }
 .pic3 .img-top {
@@ -184,11 +184,9 @@ a:hover {
 .pic4 {
   position: relative;
   display: block;
-  border: 5px solid #fff;
-  border-radius: 5%;
 }
 .section-1 .pic4 img {
-  border: 2px solid #fff;
+  border: 5px solid #fff;
   border-radius: 5%;
 }
 .pic4 .img-top {
@@ -387,7 +385,7 @@ a:hover {
   /* height: 100%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .aside-right img {
   /* object-fit: fit; */
@@ -405,14 +403,13 @@ a:hover {
 .open_pic2 {
   position: relative;
   display: inline-block;
-  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic2 img {
   /* width: 100%;
   height: 100%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .open_pic2 .img-top {
   display: none;
@@ -427,14 +424,13 @@ a:hover {
 .open_pic3 {
   position: relative;
   display: inline-block;
-  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic3 img {
   /* width: 100%;
   height: 100%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .open_pic3 .img-top {
   display: none;
@@ -456,7 +452,7 @@ a:hover {
   height: 100%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
-  box-shadow: inset 2px 2px 5px black, 2px 2px 5px black;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .open_pic4 .img-top {
   display: none;
@@ -676,11 +672,11 @@ a:hover {
   justify-content: center;
 }
 .footer .menu-logo {
-  background: url(https://enstar.com.tw/images/all/logo.svg) no-repeat;
+  background: url(https://enstar.com.tw/images/all/f_logo.svg) no-repeat;
   display: block;
   width: 250px;
   height: 70px;
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
   transition: all 0.5s ease;
   padding: 0;
   box-shadow: 1;

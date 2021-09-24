@@ -46,8 +46,11 @@
   .content .box {
     /* margin-top: 13rem; */
   }
-  .section-container .box {
+  .section-container {
     /* display: none; */
+  }
+  .content-view .puzzle {
+    height: 15vh;
   }
   .content-view .puzzle .box {
     left: 0;
@@ -66,8 +69,12 @@
   .slide:hover .dropdown {
     display: block;
   }
-  .plan .style-switcher {
-    /* display: none; */
+  .plan .row-inside #pro2 {
+    width: 15vw;
+    height: 106px;
+    right: 12px;
+    bottom: 0;
+    top: 10.5%;
   }
   .plan .box3 {
     position: relative;
@@ -137,22 +144,29 @@
 
 @media (max-width: 768px) {
   .section-1 {
-    padding: 0;
+    padding: 1rem;
   }
   .content-view {
-    padding: 0;
+    padding: 1rem;
   }
   .plan {
-    padding: 0;
+    padding: 1rem;
   }
   .open_class {
-    padding: 0;
+    padding: 1rem;
   }
   .teacher {
-    padding: 0;
+    padding: 1rem;
   }
   .star {
-    padding: 0;
+    padding: 1rem;
+  }
+  .btn {
+    height: 100px;
+    width: 100px;
+  }
+  .content a {
+    margin-top: 14rem;
   }
   /* .home #myVideo2 {
     display: none;
@@ -184,7 +198,7 @@
   }
   .home .box1 #pc2 {
     display: block;
-    width: 50vw;
+    width: 60vw;
   }
 
   .content-view .puzzle {
@@ -239,6 +253,12 @@
   }
   .open_pic {
     /* position: absolute; */
+  }
+  .footer .menu-logo {
+    margin: 10px 20px 10px 0;
+    transition: all 0.5s ease;
+    padding-right: 6rem;
+    box-shadow: 1;
   }
 }
 
