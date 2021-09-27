@@ -405,8 +405,8 @@ html {
   display: inline-block;
 }
 .open_pic2 img {
-  /* width: 100%;
-  height: 100%; */
+  /* width: 100%; */
+  /* height: 90%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
   box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
@@ -445,16 +445,13 @@ html {
 .open_pic4 {
   position: relative;
   display: inline-block;
-  /* box-shadow: inset 2px 2px 5px black, 2px 2px 5px black; */
 }
 .open_pic4 img {
-  /* width: 100%;
-  height: 100%; */
   --aspect-ratio: 500/100;
   border-radius: 5%;
   box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
-.open_pic4 .img-top {
+/* .open_pic4 .img-top {
   display: none;
   position: absolute;
   top: 0;
@@ -463,7 +460,7 @@ html {
 }
 .open_pic4:hover .img-top {
   display: inline;
-}
+} */
 
 /* Teacher */
 .teacher {
@@ -673,6 +670,7 @@ html {
 }
 .footer .menu-logo {
   background: url(https://enstar.com.tw/images/all/f_logo.svg) no-repeat;
+  /* background-size: 275px 125px; */
   display: block;
   width: 250px;
   height: 70px;
