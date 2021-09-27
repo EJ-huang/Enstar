@@ -54,6 +54,7 @@
 .row-inside {
   top: 0;
   bottom: 0;
+  position: relative;
 }
 .row-inside #pro {
   position: absolute;
@@ -61,17 +62,17 @@
   width: 61vw;
   height: 90%;
 }
-.row-inside #pro2 {
-  width: 15vw;
+/* .row-inside #pro2 {
+  width: 17vw;
   height: 230px;
   margin: 0;
   padding: 0;
   position: absolute;
   z-index: 5;
-  right: 60px;
+  left: 65vw;
   bottom: 0;
-  top: 33.5%;
-}
+  top: 33.6%;
+} */
 .row-inside #pro3 {
   position: absolute;
   right: 0;

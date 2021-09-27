@@ -32,6 +32,9 @@
   .content .box {
     margin-top: 13rem;
   }
+  .footer .footer-menu {
+    margin-right: 29rem;
+  }
 }
 @media (max-width: 1024px) {
   .home #myVideo {
@@ -50,7 +53,7 @@
     /* display: none; */
   }
   .content-view .puzzle {
-    height: 15vh;
+    height: 17vh;
   }
   .content-view .puzzle .box {
     left: 0;
@@ -69,10 +72,15 @@
   .slide:hover .dropdown {
     display: block;
   }
-  .plan .row-inside #pro2 {
+  .plan .row-inside {
+    top: 36%;
     width: 15vw;
-    height: 106px;
-    right: 12px;
+    left: 56vw;
+  }
+  .plan .row-inside #pro2 {
+    /* width: 100px; */
+    height: 8vh;
+    left: 55vw;
     bottom: 0;
     top: 35%;
   }
@@ -88,7 +96,7 @@
   }
   .plan .box3 #apply {
     position: relative;
-    top: -23px;
+    top: -45px;
     z-index: 1;
   }
   .open_class .open_pic {
@@ -145,6 +153,9 @@
   }
   .teacher .teacher-1 {
     display: none;
+  }
+  .footer .footer-menu {
+    margin-right: 0;
   }
 }
 
