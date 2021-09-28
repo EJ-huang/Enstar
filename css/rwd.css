@@ -107,11 +107,6 @@
     position: relative;
     z-index: 2;
   }
-  .plan .box3 #apply {
-    position: relative;
-    top: -45px;
-    z-index: 1;
-  }
   .open_class .open_pic {
     position: relative;
   }
@@ -197,6 +192,11 @@
   }
   .content a {
     margin-top: 20rem;
+  }
+  .plan .box3 #apply {
+    position: relative;
+    top: -45px;
+    z-index: 1;
   }
   /* .home #myVideo2 {
     display: none;
@@ -306,6 +306,11 @@
   }
   .content a {
     margin-top: 12rem;
+  }
+  .plan .box3 #apply {
+    position: relative;
+    top: -20px;
+    z-index: 1;
   }
 }
 
