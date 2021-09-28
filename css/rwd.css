@@ -1,5 +1,18 @@
 /* Responsive */
-
+@media (max-width: 1450px) {
+  .plan .row-inside {
+    height: auto;
+    width: 235px;
+    left: 78%;
+    top: 38%;
+  }
+  .plan .box1 {
+    height: 300px;
+  }
+  .footer .footer-menu {
+    margin-right: 7rem;
+  }
+}
 @media (max-width: 1024px) {
   /* html {
       font-size: 55%;
@@ -32,9 +45,9 @@
   .content .box {
     margin-top: 13rem;
   }
-  .footer .footer-menu {
+  /* .footer .footer-menu {
     margin-right: 29rem;
-  }
+  } */
 }
 @media (max-width: 1024px) {
   .home #myVideo {
