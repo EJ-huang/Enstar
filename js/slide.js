@@ -16,16 +16,18 @@
         };
       }
 
-      let images = document.querySelectorAll("img");
+
+     let images = document.querySelectorAll(".star_1 img");
       function scrollHandler() {
         let windowTop = window.scrollY;
         let windowBottom = windowTop + window.innerHeight;
+        console.log(images)
         images.forEach(img => {
           let imgMiddle = img.offsetTop + img.height / 2;
           if (imgMiddle < windowBottom && imgMiddle > windowTop) {
-            img.classList.remove("active");
-          } else {
             img.classList.add("active");
+          } else {
+            img.classList.remove("active");
           }
         });
       }

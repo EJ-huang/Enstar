@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: "源ノ角ゴシック";
 }
 
 .aside {
@@ -10,10 +11,8 @@ html {
 
 .teacher .aside {
   font-size: 180px;
-  font-family: GenYoGothicTW-H;
   text-align: center;
-  background-color: #ff9900;
-  color: #fff;
+  /* border-radius: 5%; */
 }
 
 /* .teacher .teacher1 {
@@ -23,33 +22,65 @@ html {
 /*  home */
 .home {
   display: flex;
-  position: relative;
   /* min-height: 100vh; */
   align-items: center;
   flex-flow: column;
   z-index: 0;
+  width: 100%;
+}
+.home > video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 .home .content {
   position: absolute;
+  z-index: 2;
   top: 30%;
   margin: 0 0 40px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.home .video-container video {
-  position: relative;
-  /* background-image: url("../images/Sunrise.mp4"); */
-  height: 100vh;
+.home .box1 #pc2 {
+  display: none;
 }
+.home #myVideo {
+  display: block;
+}
+.home #myVideo2 {
+  display: none;
+}
+.home #myvideo::before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+  /* position: absolute; */
+  /* height: 50vh;
+  width: 100vw; */
+}
+
+.home #myvideo > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* .box {
+  padding-top: 100px;
+} */
 .btn {
-  display: inline-block;
-  margin-top: 5rem;
-  background: #fff;
-  font-size: 68px;
-  width: 200px;
-  height: 200px;
-  color: #fa0;
-  font-family: "源ノ角ゴシック";
+  width: 150px;
+  height: 150px;
 }
+/* a:hover {
+  filter: opacity(1);
+  background-color: #fa0;
+} */
 /* .home .video-container video {
   position: absolute;
   top: 0;
@@ -60,22 +91,37 @@ html {
   object-fit: cover;
 } */
 
-/* .content .box {
+.content a {
   position: absolute;
-  width: 147px;
-  height: 156px;
-} */
+  /* width: 147px;
+  height: 156px; */
+  /* width: 20rem; */
+  margin-top: 18rem;
+  background-image: url("../images/start22.png");
+  background-position: center;
+  background-size: cover;
+}
+.content a:hover {
+  background-image: url("../images/start2.png");
+}
+.content .box:hover {
+  background-image: url("../images/star3.png") no-repeat;
+}
 
 /* Section-1 */
 .section-1 {
-  /* position: absolute; */
-  display: flex;
-  /* gap: 1.5rem; */
+  position: relative;
+  padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 
 .section-1 .pic1 {
   position: relative;
-  display: inline-block;
+  display: block;
+}
+.section-1 .pic1 img {
+  border: 5px solid #fff;
+  border-radius: 5%;
 }
 .section-1 .pic1 .img-top {
   display: none;
@@ -83,13 +129,20 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
-.section-1 .pic1:hover .img-top {
+.section-1 .pic1:hover .img-top,
+.section-1 .pic1:hover .section-1 .pic1 img {
   display: inline;
+  border: 5px solid #fa0;
 }
 .section-1 .pic2 {
   position: relative;
-  display: inline-block;
+  display: block;
+}
+.section-1 .pic2 img {
+  border: 5px solid #fff;
+  border-radius: 5%;
 }
 .section-1 .pic2 .img-top {
   display: none;
@@ -97,13 +150,20 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
-.section-1 .pic2:hover .img-top {
+.section-1 .pic2:hover .img-top,
+.section-1 .pic2:hover .section-1 .pic2 img {
   display: inline;
+  border: 5px solid #fa0;
 }
 .pic3 {
   position: relative;
-  display: inline-block;
+  display: block;
+}
+.section-1 .pic3 img {
+  border: 5px solid #fff;
+  border-radius: 5%;
 }
 .pic3 .img-top {
   display: none;
@@ -111,13 +171,20 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
-.pic3:hover .img-top {
+.pic3:hover .img-top,
+.pic3:hover .pic3 img {
+  border: 5px solid #fa0;
   display: inline;
 }
 .pic4 {
   position: relative;
-  display: inline-block;
+  display: block;
+}
+.section-1 .pic4 img {
+  border: 5px solid #fff;
+  border-radius: 5%;
 }
 .pic4 .img-top {
   display: none;
@@ -125,20 +192,33 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+  border-radius: 5%;
 }
-.pic4:hover .img-top {
+.pic4:hover .img-top,
+.pic4:hover .pic4 img {
+  border: 5px solid #fa0;
   display: inline;
 }
 
 /* Content-view */
-
+.content-view {
+  position: relative;
+  padding: 0 140px;
+  background-color: #ffe8c4;
+}
 .content-view .puzzle {
   position: relative;
-  height: 100vh;
-  background-image: url("../images/bg.png");
+  height: 50vh;
+  background-image: url("../images/teacher_power.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+.content-view .puzzle .bg-image {
+  position: relative;
+  z-index: -1;
+}
+
 /* #puzzle {
   position: relative;
   margin: 0 auto 10px;
@@ -171,6 +251,8 @@ html {
   background: #ff9900;
   font-family: "源ノ角ゴシック";
   padding: 10px;
+  width: 30vw;
+  box-shadow: 5px 3px black;
 }
 .power:hover {
   background: #fff;
@@ -194,6 +276,8 @@ html {
   background: #ff9900;
   font-family: "源ノ角ゴシック";
   padding: 10px;
+  width: 30vw;
+  box-shadow: 5px 3px black;
 }
 .wing:hover {
   background: #fff;
@@ -211,6 +295,8 @@ html {
   background: #ff9900;
   font-family: "源ノ角ゴシック";
   padding: 10px;
+  width: 30vw;
+  box-shadow: 5px 3px black;
 }
 .income:hover {
   background: #fff;
@@ -225,30 +311,50 @@ html {
 }
 
 /* plan */
-.plan .box1 .plan1 {
-  display: none;
+.plan {
+  position: relative;
+  padding: 20px 140px;
+  background-color: #ffe8c4;
 }
 .plan .box1 {
   position: relative;
-  display: block;
-}
-.plan .box1 #down {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.plan .box2 {
-  /* display: block; */
+  /* display: flex; */
+  height: 450px;
+  background-image: url(../images/double_teacher.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .plan .row-inside {
-  /* padding: 0; */
+  position: absolute;
+  background-image: url(../images/double_btn1.png);
+  height: auto;
+  width: 20%;
+  left: 78%;
+  top: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+.plan .row-inside #pro2 {
+  /* position: relative; */
+  height: 100%;
+  /* background-image: url(../images/double_btn1.png); */
+  /* background-position: center; */
+  background-size: cover;
+}
+.plan .row-inside:hover {
+  background-image: url(../images/double_btn2.png);
+}
+
 /* open_class */
 
-/* .open_class {
-  height: 100%;
+.open_class {
   position: relative;
-} */
+  padding: 20px 140px;
+  background-color: #ffe8c4;
+}
+.open_class .open1 {
+  display: none;
+}
 
 .open_class .video-word {
   flex-direction: column;
@@ -259,16 +365,10 @@ html {
   color: #ff9900;
 }
 
-.open_pic {
-  object-fit: fit;
-}
-/* .open_pic .grid {
-  align-items: stretch !important;
-} */
 .vjs-matrix.video-js {
   color: #fa0;
-  height: 102vh;
   background-color: #000;
+  border-radius: 5%;
 }
 
 /* 開課Hover */
@@ -277,9 +377,11 @@ html {
   display: inline-block;
 }
 .open_pic img {
-  width: 100%;
-  height: 100%;
+  --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
+
 .open_pic .img-top {
   display: none;
   position: absolute;
@@ -295,8 +397,9 @@ html {
   display: inline-block;
 }
 .open_pic2 img {
-  width: 100%;
-  height: 100%;
+  --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .open_pic2 .img-top {
   display: none;
@@ -313,8 +416,9 @@ html {
   display: inline-block;
 }
 .open_pic3 img {
-  width: 100%;
-  height: 100%;
+  --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 .open_pic3 .img-top {
   display: none;
@@ -331,22 +435,17 @@ html {
   display: inline-block;
 }
 .open_pic4 img {
-  width: 100%;
-  height: 100%;
-}
-.open_pic4 .img-top {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.open_pic4:hover .img-top {
-  display: inline;
+  --aspect-ratio: 500/100;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 5px gray, 2px 2px 5px gray;
 }
 
 /* Teacher */
-
+.teacher {
+  position: relative;
+  padding: 20px 140px;
+  background-color: #ffe8c4;
+}
 .teacher .teacher-inside {
   margin-top: 40px;
   text-align: center;
@@ -355,20 +454,67 @@ html {
   margin-top: 70px;
 }
 .teacher .teacher-1 img {
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .teacher-1 {
   overflow: hidden;
   position: relative;
-  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); */
 }
+/* .teacher-pic {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/teacher001.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: relative;
+}
+.teacher-pic2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/teacher002.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: relative;
+}
+.teacher-pic3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/teacher004.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  position: relative;
+}
+.teacher-say {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  padding: 50px;
+  color: #fff;
+  font-family: "源ノ角ゴシック";
+}
+.teacher-say2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  padding: 50px;
+  color: #fff;
+  font-family: "源ノ角ゴシック";
+}
+.teacher-say3 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  padding: 50px;
+  color: #fff;
+  font-family: "源ノ角ゴシック";
+} */
 .teacher-content {
   position: absolute;
   width: 100%;
-  height: 55%;
-  top: 0;
+  height: 48%;
+  top: 20px;
   left: 0;
   text-align: center;
   background: rgba(52, 152, 219, 0.5);
@@ -380,12 +526,61 @@ html {
   opacity: 1;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  background-color: #ffe8c4;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  height: 50vh;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
 /* star */
 .star {
-  /* height: 1150px; */
-  background-color: #fff1e2;
+  padding: 20px 140px;
   position: relative;
   align-items: center;
+  background-color: #ffe8c4;
+}
+.star .box-1 {
+  width: auto;
+  height: 300px;
+  background-image: url(https://picsum.photos/id/2/300/300);
+  background-repeat: no-repeat;
+}
+.star .box-2 {
+  width: auto;
+  height: 300px;
+  background-image: url(https://picsum.photos/200/300?random=2);
+  background-repeat: no-repeat;
+}
+.star .star_3.active {
+  background-color: #fa0;
+  background-image: url("https://picsum.photos/200/300?random=2");
+  border: 2px solid white;
 }
 .star .box {
   position: relative;
@@ -394,7 +589,7 @@ html {
   display: block;
   margin: 0 auto;
 }
-.star_1 .slide-in {
+/* .star_1 .slide-in {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -438,7 +633,7 @@ html {
   position: absolute;
   top: 0;
   bottom: 0;
-}
+} */
 .align-left {
   float: left;
   margin-right: 20px;
@@ -453,7 +648,31 @@ html {
   transition: all 0.5s;
 }
 
-.align-left.slide-in {
+/* Footer */
+
+.footer {
+  background-color: #ff9900;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  font-family: "源ノ角ゴシック";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer .menu-logo {
+  background: url(https://enstar.com.tw/images/all/f_logo.svg) no-repeat;
+  /* background-size: 275px 125px; */
+  display: block;
+  width: 250px;
+  height: 70px;
+  margin: 10px 0 10px;
+  transition: all 0.5s ease;
+  padding: 0;
+  box-shadow: 1;
+}
+
+/* .align-left.slide-in {
   transform: translateY(30%) scale(0.95);
 }
 
@@ -464,17 +683,17 @@ html {
 .slide-in.active {
   opacity: 1;
   transform: translateY(0%) scale(1);
-}
+} */
 
 /* .star_1 {
   position: relative;
-} */
-/* .star_1 .img-top {
+}
+.star_1 .img-top {
   position: absolute;
   top: 0;
   left: 0;
-} */
-/* .star_1 {
+}
+.star_1 {
   position: relative;
   display: inline-block;
 }
@@ -483,17 +702,16 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
-} */
-/* .open_pic .img-in {
-  z-index: 90;
-} */
-/* .open_pic:hover .img-top {
-  display: inline;
 }
+.open_pic .img-in {
+  z-index: 90;
+}
+.open_pic:hover .img-top {
+  display: inline;
+} */
 
 .star_1 {
   position: relative;
-  display: inline-block;
 }
 .star_1 .img-top {
   display: none;
@@ -507,7 +725,6 @@ html {
 }
 .star_2 {
   position: relative;
-  display: inline-block;
 }
 .star_2 .img-top {
   display: none;
@@ -521,13 +738,12 @@ html {
 }
 .star_3 {
   position: relative;
-  display: inline-block;
 }
 .star_3 .img-top {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 99;
 }
 .star_3:hover .img-top {
@@ -535,7 +751,6 @@ html {
 }
 .star_4 {
   position: relative;
-  display: inline-block;
 }
 .star_4 .img-top {
   display: none;
@@ -549,7 +764,6 @@ html {
 }
 .star_5 {
   position: relative;
-  display: inline-block;
 }
 .star_5 .img-top {
   display: none;
@@ -563,7 +777,6 @@ html {
 }
 .star_6 {
   position: relative;
-  display: inline-block;
 }
 .star_6 .img-top {
   display: none;
@@ -577,7 +790,6 @@ html {
 }
 .star_7 {
   position: relative;
-  display: inline-block;
 }
 .star_7 .img-top {
   display: none;
@@ -591,7 +803,6 @@ html {
 }
 .star_8 {
   position: relative;
-  display: inline-block;
 }
 .star_8 .img-top {
   display: none;
@@ -602,4 +813,53 @@ html {
 }
 .star_8:hover .img-top {
   display: inline;
+}
+
+/* footer */
+
+.footer ul:hover {
+  text-decoration: none;
+}
+.footer-item {
+  letter-spacing: 1px;
+}
+.footer-item:hover {
+  color: #ffd1a4;
+}
+/* .footer-box1 {
+  text-align: center;
+  justify-content: center;
 } */
+
+.footer-box2 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -30%;
+  z-index: 99;
+}
+.bg_footer1 {
+  position: relative;
+}
+.bg_footer1:hover .img-top {
+  display: inline;
+}
+
+.bg_footer2 {
+  position: relative;
+}
+.bg_footer2:hover .img-top {
+  display: inline;
+}
+.bg_footer3 {
+  position: relative;
+}
+.bg_footer3:hover .img-top {
+  display: inline;
+}
+.bg_footer4 {
+  position: relative;
+}
+.bg_footer4:hover .img-top {
+  display: inline;
+}
