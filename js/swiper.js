@@ -35,7 +35,7 @@
     invert: true
   },
   autoplay: {
-    delay: 5000,
+    delay: 2000,
   },
   pagination: {
     el: ".swiper-pagination",
